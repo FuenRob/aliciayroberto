@@ -22,9 +22,3 @@ jobs:
       env:
         API_GOOGLE_MAP: ${{ secrets.REACT_APP_API_GOOGLE_MAP }}
 
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
