@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Build
-      run: echo $API_GOOGLE_MAP
+      run: echo ${{ secrets.GATSBY_API_GOOGLE_MAP }}
       env:
-        API_GOOGLE_MAP: "AIzaSyAr2uXNDS-9TdE8XUJesgCZ9OZU4pSJ1HE"
+        GATSBY_API_GOOGLE_MAP: ${{ secrets.GATSBY_API_GOOGLE_MAP }}
 
