@@ -140,7 +140,7 @@ class Main extends React.Component {
               <input type="checkbox" name="alergenos[]" id="otros" value="Otros"/><label htmlFor="otros">{dataLang.formulary.otros}</label>
             </div>
             <div className="field">
-              <input type="checkbox" name="conditions" id="conditions" /><label htmlFor="conditions"><a href="/politica-de-privacidad" target="_blank" rel="noopener noreferrer">{dataLang.formulary.conditions}</a></label>
+              <input type="checkbox" name="conditions" id="conditions" /><label htmlFor="conditions"><a href="https://www.aliciayroberto.com/politica-de-privacidad" target="_blank" rel="noopener noreferrer">{dataLang.formulary.conditions}</a></label>
               {status === "CONDITIONS" && <p>{dataLang.formulary.errorConditions}</p>}
             </div>
             <ul className="actions">
