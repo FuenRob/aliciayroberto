@@ -47,7 +47,7 @@ module.exports = {
             conditions: 'Acepto la política de privacidad',
             errorConditions: 'Debes aceptar la política de privacidad'
         },
-        confirmated: '<p>Después del añito que hemos tenido, pandemia incluida, lo que más nos apetece es celebrar con vosotros, por eso no nos hace falta que nos hagáis un regalo, si aun así insistís en ello, quizás queráis ayudarnos a tener una súper luna de miel, aunque no podamos ir a México este año.</p><p>ES93 1465 01 00921726771258</p>'
+        confirmated: '<p>Después del añito que hemos tenido, pandemia incluida, lo que más nos apetece es celebrar con vosotros, por eso no hace falta que nos hagáis un regalo, si aun así insistís en ello, quizás queráis ayudarnos a tener una súper luna de miel, aunque no podamos ir a México este año.</p><p>ES93 1465 01 00921726771258</p>'
     },
     'pt':{
         title: 'El evento de año',
