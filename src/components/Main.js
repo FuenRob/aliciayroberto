@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Link } from 'gatsby'
 import parse from 'html-react-parser';
 import pic01 from '../images/pic02.jpeg'
 import GoogleMap from './GoogleMap'
