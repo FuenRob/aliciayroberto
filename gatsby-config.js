@@ -27,7 +27,13 @@ module.exports = {
         langKeyDefault: 'es',
         useLangKeyLayout: false
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-163936148-2",
+      },
+    },
   ],
   pathPrefix: "/",
 }
