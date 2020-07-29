@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import detectBrowserLanguage from 'detect-browser-language'
-import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
+import { getCurrentLangKey } from 'ptz-i18n';
 
 import '../assets/scss/main.scss'
 
 const Layout = ({ children, location }) => {
-
-  if(detectBrowserLanguage() === 'pt' && location.pathname === '/')
-    window.location.replace("/pt/");
-
+  if (typeof navigator !== `undefined`)
+    if(detectBrowserLanguage() === 'pt' && location.pathname === '/')
+      window.location.replace("/pt/");
+  
   let content;
 
   if (location && location.pathname === '/') {
