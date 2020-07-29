@@ -2,12 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
+import detectBrowserLanguage from 'detect-browser-language'
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
 
 import '../assets/scss/main.scss'
 
 const Layout = ({ children, location }) => {
+
+  if(detectBrowserLanguage() === 'pt' && location.pathname === '/')
+    window.location.replace("/pt/");
 
   let content;
 
@@ -44,6 +47,7 @@ const Layout = ({ children, location }) => {
         const url = location.pathname;
         const { langs, defaultLangKey } = data.site.siteMetadata;
         const langKey = getCurrentLangKey(langs, defaultLangKey, url);
+        console.log(langKey)
         //const homeLink = `/${langKey}/`.replace(`/${defaultLangKey}/`, '/');
         //const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({ ...item, link: item.link.replace(`/${defaultLangKey}/`, '/') }));
         return (
