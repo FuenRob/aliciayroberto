@@ -10,6 +10,10 @@ module.exports = {
             {
                 id: 'confirmation',
                 name: 'Confirmación'
+            },
+            {
+                id: 'gift',
+                name: 'Regalo'
             }
         ],
         paragraph: '<p>La boda tendrá lugar en la sierra de Madrid, en San Agustín de Guadalix. La finca pertenece al Grupo Araceli, Etxemendi-Baserri.<br/>El camino para llegar hasta ella no está asfaltado, pero no es intransitable. Cualquier vehículo puede llegar hasta el parking.</p><p>Comenzará con una ceremonia en la propia finca a las 13:00. Acto seguido tendrá lugar el cóctel.</p><p>Y finalmente, para descansar un poco antes del baile, el banquete sentados.<br/>Por último, ¡lo daremos todo en la pista de baile!</p><p>Por favor, intenta confirmar antes del 1 de septiembre, ¡para no perderte el evento del año!</p><p>Como buenos millenials, queremos que todo lo que subáis a instagram esté etiquetado para que luego podamos verlo, usad el hastag #aliciayroberto </p>',
@@ -47,7 +51,8 @@ module.exports = {
             conditions: 'Acepto la política de privacidad',
             errorConditions: 'Debes aceptar la política de privacidad'
         },
-        confirmated: '<p>Después del añito que hemos tenido, pandemia incluida, lo que más nos apetece es celebrar con vosotros, por eso no hace falta que nos hagáis un regalo, si aun así insistís en ello, quizás queráis ayudarnos a tener una súper luna de miel, aunque no podamos ir a México este año.</p><p>ES93 1465 01 00921726771258</p>'
+        confirmated: '<p>Después del añito que hemos tenido, pandemia incluida, lo que más nos apetece es celebrar con vosotros, por eso no hace falta que nos hagáis un regalo, si aun así insistís en ello, quizás queráis ayudarnos a tener una súper luna de miel, aunque no podamos ir a México este año.</p><p>ES93 1465 01 00921726771258</p>',
+        gift: 'Regalo'
     },
     'pt':{
         title: 'O evento do ano',
@@ -60,6 +65,10 @@ module.exports = {
             {
                 id: 'confirmation',
                 name: 'Confirmação'
+            },
+            {
+                id: 'gift',
+                name: 'Prenda'
             }
         ],
         paragraph: '<p>O casamento acontecerá na Serra de Madrid, em San Agustín de Guadalix. A fazenda pertence ao Grupo Araceli, Etxemendi-Baserri.<br/>O caminho para alcançá-la não é asfaltado, mas não é intransitável. Qualquer veículo pode chegar ao estacionamento.</p><p>Ele começará com uma cerimônia na própria fazenda às 13:00. Então o coquetel acontecerá.</p><p>E, finalmente, para descansar um pouco antes da dança, do banquete.<br/>Finalmente, daremos tudo na pista de dança!</p><p>Tente confirmar antes de 1º de setembro, para não perder o evento do ano!</p><p>Como bons millennials, queremos que tudo que você carrega no instagram seja marcado para que possamos vê-lo mais tarde, use o hastag #aliciayroberto</p>',
@@ -95,6 +104,7 @@ module.exports = {
             reset: 'Começar de novo',
             error: 'Ooops! Ocorreu um erro.'
         },
-        confirmated: '<p>Após o ano em que tivemos, incluindo a pandemia, o que mais queremos é celebrar com você, para que não precisemos que você nos dê um presente. Se você ainda insistir, pode nos ajudar a ter uma super lua de mel, Embora não possamos ir ao México este ano.</p><p>ES93 1465 01 00921726771258</p>'
+        confirmated: '<p>Após o ano em que tivemos, incluindo a pandemia, o que mais queremos é celebrar com você, para que não precisemos que você nos dê um presente. Se você ainda insistir, pode nos ajudar a ter uma super lua de mel, Embora não possamos ir ao México este ano.</p><p>ES93 1465 01 00921726771258</p>',
+        gift: 'Prenda'
     }
 };

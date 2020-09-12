@@ -162,6 +162,19 @@ class Main extends React.Component {
           }
           {close}
         </article>
+
+        <article
+          id="gift"
+          className={`${this.props.article === 'gift' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">{dataLang.gift}</h2>
+          <div>
+            {parse(dataLang.confirmated)}
+          </div>
+        </article>
       </div>
     )
   }
