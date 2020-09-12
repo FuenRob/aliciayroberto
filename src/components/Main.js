@@ -174,6 +174,7 @@ class Main extends React.Component {
           <div>
             {parse(dataLang.confirmated)}
           </div>
+          {close}
         </article>
       </div>
     )
