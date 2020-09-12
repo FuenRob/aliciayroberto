@@ -1,22 +1,26 @@
-name: CI
-
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-    - name: Checkout
-      uses: actions/checkout@v1
-
-    - name: Build
-      run: echo ${{ secrets.GATSBY_API_GOOGLE_MAP }}
-      env:
-        GATSBY_API_GOOGLE_MAP: ${{ secrets.GATSBY_API_GOOGLE_MAP }}
-
+name: Deploy to GitHub Pages
+  on:
+    push:
+      branches:
+        - gh-pages
+  
+  jobs:
+    build_gatsby:
+      name: build
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1
+  
+        - name: yarn install
+          run: yarn install
+  
+        - name: gatsby build
+          env:
+            GATSBY_API_GOOGLE_MAP: ${{ secrets.GATSBY_API_GOOGLE_MAP }}
+          run: yarn build
+  
+        - name: deploy
+          uses: maxheld83/ghpages@v0.2.1
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            BUILD_DIR: "public/"
